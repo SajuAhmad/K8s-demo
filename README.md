@@ -32,3 +32,10 @@ get IP of the Node : kubectl cluster-info
 Then call your service <NODE IP>:<NODE PORT>
 
 to store secrets, pass them first thourgh base64: check  https://kubernetes.io/docs/concepts/configuration/secret/
+
+# If you are having problem with minikube and Virtualbox-6 (in case error starting minikube)
+apt install linux-headers-generic
+dpkg-reconfigure virtualbox-dkms
+dpkg-reconfigure virtualbox
+
+(NOTE: Use firefox (if using ubuntu) to access your kubernetes deshboard or you might have some errors related to linux sendbox)
